@@ -1,0 +1,25 @@
+{
+    "winstrom": {
+        "@globalVersion": "108948",
+        "changes": [{
+                "@evidence": "faktura-vydana",
+                "@in-version": "108946",
+                "@operation": "update",
+                "id": "1307",
+                "external-ids": ["code:VF1-0013/2017"]
+            }, {
+                "@evidence": "faktura-vydana-polozka",
+                "@in-version": "108947",
+                "@operation": "update",
+                "id": "2332",
+                "external-ids": []
+            }, {
+                "@evidence": "faktura-vydana",
+                "@in-version": "108948",
+                "@operation": "update",
+                "id": "1307",
+                "external-ids": ["code:VF1-0013/2017"]
+            }],
+        "next": "none"
+    }
+}

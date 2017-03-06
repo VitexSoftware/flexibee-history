@@ -1,0 +1,43 @@
+{
+    "winstrom": {
+        "@globalVersion": "108929",
+        "changes": [{
+                "@evidence": "faktura-vydana-polozka",
+                "@in-version": "108924",
+                "@operation": "create",
+                "id": "10509",
+                "external-ids": ["code:DOMENA-COM-EUR"]
+            }, {
+                "@evidence": "faktura-vydana",
+                "@in-version": "108925",
+                "@operation": "update",
+                "id": "5311",
+                "external-ids": ["code:VF1-0019/2017"]
+            }, {
+                "@evidence": "faktura-vydana",
+                "@in-version": "108926",
+                "@operation": "update",
+                "id": "5311",
+                "external-ids": ["code:VF1-0019/2017"]
+            }, {
+                "@evidence": "faktura-vydana-polozka",
+                "@in-version": "108927",
+                "@operation": "create",
+                "id": "10510",
+                "external-ids": []
+            }, {
+                "@evidence": "ucetni-obdobi",
+                "@in-version": "108928",
+                "@operation": "update",
+                "id": "18",
+                "external-ids": ["code:2017"]
+            }, {
+                "@evidence": "faktura-vydana",
+                "@in-version": "108929",
+                "@operation": "update",
+                "id": "5311",
+                "external-ids": ["code:VF1-0019/2017"]
+            }],
+        "next": "none"
+    }
+}

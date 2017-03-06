@@ -1,0 +1,33 @@
+{
+    "name": "vitexsoftware/flexi-bee-history",
+    "description": "Description of project FlexiBee history.",
+    "authors": [
+        {
+            "name": "Vitex",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "require": {
+        "spoje.net/flexipeehp": "dev-master",
+        "sebastian/git": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlexiPeeHP\\History\\": "src/FlexiPeeHP/History/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Ease\\": "vendor/vitexsoftware/ease-framework/tests/src/Ease",
+            "Test\\FlexiPeeHP\\": "testing/src/FlexiPeeHP/",
+            "Test\\": "testing/"
+        }
+    },
+    "require-dev": {
+        "phpunit/php-token-stream": "~1.2",
+        "phpunit/phpunit": "5.3.*",
+        "phpunit/phpunit-skeleton-generator": "*",
+        "jakub-onderka/php-parallel-lint": "^0.9.2",
+        "jakub-onderka/php-console-highlighter": "^0.3.2"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "winstrom": {
+        "@globalVersion": "108922",
+        "changes": [{
+                "@evidence": "rocni-rada",
+                "@in-version": "108920",
+                "@operation": "update",
+                "id": "78",
+                "external-ids": []
+            }, {
+                "@evidence": "uzivatel",
+                "@in-version": "108921",
+                "@operation": "create",
+                "id": "31",
+                "external-ids": ["code:system_user"]
+            }, {
+                "@evidence": "kurz",
+                "@in-version": "108922",
+                "@operation": "create",
+                "id": "32",
+                "external-ids": ["ext:EXCHANGE:EUR-2017-03-05"]
+            }],
+        "next": "none"
+    }
+}

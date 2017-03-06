@@ -1,0 +1,9 @@
+{
+    "EASE_APPNAME": "FlexiBeeHistory",
+    "EASE_LOGGER": "syslog|console",
+    "FLEXIBEE_URL": "https://localhost:5434",
+    "FLEXIBEE_LOGIN": "admin",
+    "FLEXIBEE_PASSWORD": "admin123",
+    "FLEXIBEE_COMPANY": "spoje_net_s_r_o_",
+    "mirror-dir": "/tmp/flexibee-mirror/"
+}

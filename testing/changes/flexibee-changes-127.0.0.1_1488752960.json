@@ -1,0 +1,13 @@
+{
+    "winstrom": {
+        "@globalVersion": "108923",
+        "changes": [{
+                "@evidence": "faktura-vydana",
+                "@in-version": "108923",
+                "@operation": "create",
+                "id": "5311",
+                "external-ids": ["code:VF1-0019/2017"]
+            }],
+        "next": "none"
+    }
+}
