@@ -75,8 +75,7 @@ class History extends \FlexiPeeHP\FlexiBeeRO
             default:
                 $this->setEvidence($evidence);
                 $this->loadFromFlexiBee($id);
-                $changeToSave = json_encode($this->getData(),
-                    $this->debug ? JSON_PRETTY_PRINT : null);
+                $changeToSave = json_encode($this->getData(),JSON_PRETTY_PRINT);
                 file_put_contents($changeFile, $changeToSave);
                 if ($operation == 'create') {
                     $this->git->add(dirname($changeFile));
@@ -101,7 +100,7 @@ class History extends \FlexiPeeHP\FlexiBeeRO
         if ($operation == 'change') {
             $changeMessage .= "\n".print_r($this->getLastDataChange(0), true);
         }
-        $this->addStatusMessage($changeMessage);
+        $this->addStatusMessage('GIT: '.$changeMessage);
         return $this->git->commit($changeMessage);
     }
 
