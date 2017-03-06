@@ -49,6 +49,17 @@ class GitStorage extends \SebastianBergmann\Git\Git
     }
 
     /**
+     * Remove file From GIT
+     *
+     * @param string $file
+     * @return array
+     */
+    public function rm($file)
+    {
+        return $this->execute('rm '.$file);
+    }
+
+    /**
      * Set Git's config value
      * 
      * @param string $key
@@ -58,5 +69,27 @@ class GitStorage extends \SebastianBergmann\Git\Git
     public function config($key, $value)
     {
         return $this->execute('config '.$key.' '.$value);
+    }
+
+    /**
+     * Show previous version of file
+     *
+     * @param string $file path
+     * @return array
+     */
+    public function show($file, $prevchange = 0)
+    {
+        return $this->execute('show  HEAD~'.$prevchange.':'.$file);
+    }
+
+    /**
+     * Get HASH of prvious commit of given file
+     *
+     * @param string $file path
+     * @return string SHA1 commit hash
+     */
+    public function getPreviousCommitHash($file)
+    {
+        return current($this->execute('log -n 1 --format=format:%H '.$file));
     }
 }
